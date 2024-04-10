@@ -1,5 +1,5 @@
 
-def buscaMenor(arr):
+def buscaMenor(arr: list):
     menor = arr[0]
     menor_indice = 0
 
@@ -10,8 +10,8 @@ def buscaMenor(arr):
     return menor_indice
 
 
-def ordenacao_por_selecao(arr):
-    novoArr = []
+def ordenacao_por_selecao(arr: list):
+    novoArr = list()
     for i in range(len(arr)):
         menor = buscaMenor(arr)
         novoArr.append(arr.pop(menor))
